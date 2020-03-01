@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/txt_hello"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello World!" />
+
+    <TextView
+        android:id="@+id/txt_goodBye"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_hello"
+        android:text="good Bye"
+        android:textSize="30dp"
+        android:textStyle="bold"></TextView>
+
+    <EditText
+        android:id="@+id/ed_one"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_goodBye"
+        android:inputType="number"></EditText>
+
+    <EditText
+        android:id="@+id/ed_two"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ed_one"
+        android:inputType="number"></EditText>
+
+    <EditText
+        android:id="@+id/ed_result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ed_two"></EditText>
+
+    <Button
+        android:id="@+id/btn_click"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ed_result"
+        android:text="click me"
+        android:textSize="30dp"></Button>
+
+    <Button
+        android:id="@+id/btn_cacli"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_click"
+        android:text="open calci"
+        android:textSize="30dp"></Button>
+
+    <Button
+        android:id="@+id/btn_linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_cacli"
+        android:text="linear layout"
+        android:textSize="30dp"></Button>
+
+    <Button
+        android:id="@+id/btn_logout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_linear"
+        android:text="Logout"
+        android:textSize="30dp"></Button>
+</RelativeLayout>
